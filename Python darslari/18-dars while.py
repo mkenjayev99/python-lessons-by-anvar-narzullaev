@@ -45,4 +45,38 @@ while True:
 
 # -------------------------------
 # 3-masala
+'''dynamic type: bookings'''
+# bookings = list()
+# while True:
+#     q = input("Enter product name: ")
+    
+#     if q.lower() == "ok":
+#         break
+#     else:
+#         bookings.append(q.title())
+# print('Bookings list is done\n')
+'''Static type: bookings '''
+bookings = ['olma', 'anjir', 'nok', 'bodom', 'banan']
 
+'''dynamic type: market'''
+# market = dict()
+# while True:
+#     pro = input("Enter product name:")
+#     if pro.lower() == 'exit' or pro.lower() == 'quit' or pro.lower() == 'stop' or pro.lower() == 'leave' or pro.lower() == 'ok':
+#         # print("*************** Program finished ***************\n")
+#         break
+#     else:
+#         pri = input("Enter it's price: ")
+#         market[pro] = int(pri)
+# print('Market list is done\n')
+'''Static type: market'''
+market = {'olma':25000, 'anjir':30000, 'nok':28000, 'bodom':50000, 'limon':10000}
+
+
+while bookings:
+    booking = bookings.pop()
+    if booking in market.keys():
+        price = market[booking]
+        print(f"{booking.title()} - {price} sum")
+    else:
+        print(f"We have not {booking.title()}")
