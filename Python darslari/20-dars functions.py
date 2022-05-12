@@ -217,7 +217,7 @@ print(find_primes(a, b))
 # -----------------------------
 
 # 6 - masala
-
+"""
 
 def find_fibonacci(num):
     '''Foydalanuvchidan son qabul qilib,  shu son miqdoricha Fibonachchi 
@@ -239,4 +239,4 @@ def find_fibonacci(num):
 
 num = int(input("Enter number: "))
 print(find_fibonacci(num))
-
+"""
