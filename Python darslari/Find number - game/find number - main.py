@@ -67,4 +67,4 @@ def main_func(x=10):
 
         ask_to_user = int(input("Let's play again? Yes(1) / no(0): "))
         
-main_func()
+# main_func()
