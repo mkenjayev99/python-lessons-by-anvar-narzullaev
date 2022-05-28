@@ -1,4 +1,4 @@
-def display(user_letters, word): # returns a <list> which contains some letters as <object>
+def display(user_letters, word):
     display_letter = ''
     for letter in word:
         if letter in user_letters.upper():
@@ -6,4 +6,3 @@ def display(user_letters, word): # returns a <list> which contains some letters 
         else:
             display_letter += '-'
     return display_letter
-    
