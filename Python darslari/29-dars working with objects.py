@@ -59,9 +59,15 @@ shop.add_car(car3)
 
 # print(shop.get_cars_list())
 
-# print(dir(Car), end='\n\n') #returns only it's <features> due to the reason that we give <a class> to dir() function
-# print(dir(Car_shop), end='\n\n')
-# print(dir(shop), end='\n\n') #returns not only it's features, but also it's attributes due to the reason that we give <an object> to dir() function
-# print(dir(car1), end='\n\n')
+print(dir(Car), end='\n\n') #returns only it's <features> due to the reason that we give <a class> to dir() function
+print(dir(Car_shop), end='\n\n')
+print(dir(shop), end='\n\n') #returns not only it's features, but also it's attributes due to the reason that we give <an object> to dir() function
+print(dir(car1), end='\n\n')
 
-print(see_methods(Car_shop)) # !!! MUST BE DONE FROM HERE !!!
+print(f"\n***************************************************************************\n")
+
+print(Car.__dict__, end='\n\n') #returns it's <attributes> with <features> as a dictionary due to the reason that we give <a class> to ___dict__ method
+print(Car_shop.__dict__, end='\n\n')
+print(shop.__dict__, end='\n\n') #returns it's <attributes> as a dictionary due to the reason that we give <a class> to ___dict__ method
+print(car1.__dict__, end='\n\n')
+
