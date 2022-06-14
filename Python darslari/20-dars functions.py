@@ -1,5 +1,5 @@
 # 1 - masala
-"""
+
 
 def collect_data(curr_year, u_name, u_surname, u_born_year, u_born_city, u_email, u_age, u_phone):
     
@@ -85,7 +85,7 @@ for user in user_data:
 
 #         u_age = curr_year - u_born_year
 
-"""
+
 
 # -----------------------------
 
