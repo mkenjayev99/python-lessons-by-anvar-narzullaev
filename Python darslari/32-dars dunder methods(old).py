@@ -1,8 +1,5 @@
 from uuid import uuid4
 
-from pendulum import instance
-
-
 class Person:
     __num_persons = 0
     def __init__(self, name, lastname, age, country):
@@ -38,7 +35,7 @@ class Student(Person):
         return self.course <= another_obj.course
 
 st1 = Student("Xobil", "Qobilov", 30, "India", 4)
-st2 = Student("Salim", "Karimav", 23, "USA", 2)
+st2 = Student("Salim", "Karimov", 23, "USA", 2)
 st3 = Student("Olim", "Naimov", 16, "Uzbekistan", 1)
 
 # print(st1 == st2) #False
@@ -47,24 +44,23 @@ st3 = Student("Olim", "Naimov", 16, "Uzbekistan", 1)
 
 
 class StudentsGroup:
-    def __init__(self, name, room, course):
+    def __init__(self, name):
         self.name = name
-        self.room = room
-        self.cource = course
         self.students = []
 
     def __repr__(self):
-        return f"Group: {self.name};\nCourse: {self.cource};\nRoom: {self.room}"
+        return f"Group: {self.name}"
 
     def add_student(self, student):
-        if instance(student, Student):
+        if isinstance(student, Student):
             self.students.append(student)
         else:
             return f"Enter the Student object "
 
     
 
-gr1 = StudentsGroup("Stars", 57, 3)
+gr1 = StudentsGroup("Stars")
+
 
 for student in [st1, st2, st3]:
     gr1.add_student(student)
