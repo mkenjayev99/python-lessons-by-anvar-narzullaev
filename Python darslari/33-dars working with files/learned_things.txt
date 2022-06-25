@@ -1,0 +1,5 @@
+open() metodi bilan fayllarni ochish mumkin. 
+Bunda open() metodo bizga object qaytaradi 
+fayllarni **with** funksiyasi bilan ochish tavsiya qilinanadi 
+faylni ochiq holda qoldirish faylga zarar yetishiga sabab bo'lishi mumkin 
+Shuning uchun faylni ochgach uni ketidan yopib ketish maqsadga muvofiq 
