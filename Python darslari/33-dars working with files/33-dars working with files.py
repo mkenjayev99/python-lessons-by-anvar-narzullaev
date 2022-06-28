@@ -67,4 +67,4 @@ with open(new_file, 'rb') as f:
     
 
 print(binary1) # float qiymatni qaytaradi
-print(type(binary1)) # tepadadgi binary1 ning tipi <class float ekan>
+print(type(binary1)) # tepadadgi binary1 ning tipi <class float> ekan
