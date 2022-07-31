@@ -31,12 +31,12 @@ import unittest
 # unittest.main()
 
 
-# from fibonaci import fibonaci
-# class FibonaciTest(unittest.TestCase):
-#     def test_fibo(self):
-#         self.assertTrue(fibonaci(13))
-#         self.assertTrue(fibonaci(55))
-#         self.assertFalse(fibonaci(54))
-#         self.assertFalse(fibonaci(15))
+from fibonaci import fibonaci
+class FibonaciTest(unittest.TestCase):
+    def test_fibo(self):
+        self.assertTrue(fibonaci(13))
+        self.assertTrue(fibonaci(55))
+        self.assertFalse(fibonaci(54))
+        self.assertFalse(fibonaci(15))
         
-# unittest.main()
+unittest.main()

@@ -33,6 +33,7 @@ class Subject:
 
 student1 = Student("salim".capitalize(), "olimov".capitalize(), 2000, "ise12304")
 
+# creating 'Student' objects
 subject1 = Subject("History of companions", 1049, "5 month", "Elementary")
 subject2 = Subject("Atomic habits", 600, "3 month", "Elementary")
 subject3 = Subject("Aqida ilmi", 900, "6 month", "Intermediate")
